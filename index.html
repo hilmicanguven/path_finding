@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2013747b9baa40e48859bb8d152f74d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2013747b9baa40e48859bb8d152f74d6" ></div>
+        
+</body>
+<script>    
+    
+            var map_2013747b9baa40e48859bb8d152f74d6 = L.map(
+                "map_2013747b9baa40e48859bb8d152f74d6",
+                {
+                    center: [39.7902699, 30.4830909],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 45,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c6457e3515e438386eae8d6c57dff0c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2013747b9baa40e48859bb8d152f74d6);
+        
+    
+            var marker_d57352b5e5a74077ab39901e4a614070 = L.marker(
+                [39.7902699, 30.4830909],
+                {}
+            ).addTo(map_2013747b9baa40e48859bb8d152f74d6);
+        
+    
+        var popup_93db47dd2cf1474aa7b2901d322fb2b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_456e66f5a3b84a1f9d941f009fd46a16 = $(`<div id="html_456e66f5a3b84a1f9d941f009fd46a16" style="width: 100.0%; height: 100.0%;">Baslangıc Noktası</div>`)[0];
+            popup_93db47dd2cf1474aa7b2901d322fb2b7.setContent(html_456e66f5a3b84a1f9d941f009fd46a16);
+        
+
+        marker_d57352b5e5a74077ab39901e4a614070.bindPopup(popup_93db47dd2cf1474aa7b2901d322fb2b7)
+        ;
+
+        
+    
+    
+            var marker_5ff606ffdd55482ea7d9fc56d127ecc5 = L.marker(
+                [39.789396, 30.4917812],
+                {}
+            ).addTo(map_2013747b9baa40e48859bb8d152f74d6);
+        
+    
+        var popup_0c79ba080f4f4279a5901a074f42659e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_252d9b374e3f448e88ec8f138be934d1 = $(`<div id="html_252d9b374e3f448e88ec8f138be934d1" style="width: 100.0%; height: 100.0%;">Eskisehir</div>`)[0];
+            popup_0c79ba080f4f4279a5901a074f42659e.setContent(html_252d9b374e3f448e88ec8f138be934d1);
+        
+
+        marker_5ff606ffdd55482ea7d9fc56d127ecc5.bindPopup(popup_0c79ba080f4f4279a5901a074f42659e)
+        ;
+
+        
+    
+    
+            marker_5ff606ffdd55482ea7d9fc56d127ecc5.bindTooltip(
+                `<div>
+                     click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9534e4789994d99aa56632251761b6a = L.marker(
+                [39.7876153, 30.4958797],
+                {}
+            ).addTo(map_2013747b9baa40e48859bb8d152f74d6);
+        
+    
+            var icon_f09bd3141cbd4be1931d92e88fdb939c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a9534e4789994d99aa56632251761b6a.setIcon(icon_f09bd3141cbd4be1931d92e88fdb939c);
+        
+    
+        var popup_440dcec19e7f4712aec20b93eba9d31f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8672e0d19494527af94ec16a37eb58f = $(`<div id="html_d8672e0d19494527af94ec16a37eb58f" style="width: 100.0%; height: 100.0%;">f</div>`)[0];
+            popup_440dcec19e7f4712aec20b93eba9d31f.setContent(html_d8672e0d19494527af94ec16a37eb58f);
+        
+
+        marker_a9534e4789994d99aa56632251761b6a.bindPopup(popup_440dcec19e7f4712aec20b93eba9d31f)
+        ;
+
+        
+    
+    
+            var marker_f45b4e6ccd2943adbca399d667bb853c = L.marker(
+                [39.7902369, 30.5054712],
+                {}
+            ).addTo(map_2013747b9baa40e48859bb8d152f74d6);
+        
+    
+            var icon_d46d15f924f748fcb4dd4413a9ebd87c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f45b4e6ccd2943adbca399d667bb853c.setIcon(icon_d46d15f924f748fcb4dd4413a9ebd87c);
+        
+    
+        var popup_d80d9fe4f6894739876adda65140f8a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9241ffd07f5e473ab0b8c375ea37f18e = $(`<div id="html_9241ffd07f5e473ab0b8c375ea37f18e" style="width: 100.0%; height: 100.0%;">h</div>`)[0];
+            popup_d80d9fe4f6894739876adda65140f8a5.setContent(html_9241ffd07f5e473ab0b8c375ea37f18e);
+        
+
+        marker_f45b4e6ccd2943adbca399d667bb853c.bindPopup(popup_d80d9fe4f6894739876adda65140f8a5)
+        ;
+
+        
+    
+    
+            var poly_line_51eb8cf44eec47dd8b548662b43ae8e7 = L.polyline(
+                [[39.7902699, 30.4830909], [39.789396, 30.4917812], [39.7876153, 30.4958797], [39.7902369, 30.5054712]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_2013747b9baa40e48859bb8d152f74d6);
+        
+</script>
